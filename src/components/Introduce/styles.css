@@ -1,0 +1,21 @@
+.introduce-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}
+.int-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 15px lightgrey;
+}
+.int-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 30px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
