@@ -7,8 +7,19 @@
   padding: 20px;
   background-color: black;
   color: #fff;
-  box-shadow: 0 0 10px 10px lightgrey;
+  box-shadow: 0 0 15px 15px lightgrey;
 }
 .contact-btn:hover {
   box-shadow: 0 0 5px 5px #fff;
+}
+.link:hover {
+  cursor: pointer;
+}
+.header-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.laptop-icon {
+  margin-right: 10px;
 }
