@@ -1,31 +1,45 @@
 import "./styles.css";
+import { Typography, List, ListItem } from "@mui/material";
+import CodeIcon from "@mui/icons-material/Code";
+import HandymanIcon from "@mui/icons-material/Handyman";
 
 export const Skills = () => {
   return (
     <div className="skill-container">
       <div className="skill-title">
-        <h2>Skills</h2>
+        <Typography variant="h3">Skills</Typography>
       </div>
       <div className="skill-info">
         <div>
-          <h4>Web Development Technologies</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>Css</li>
-            <li>React</li>
-          </ul>
+          <Typography className="bottom-line" variant="h5">
+            Technologies
+          </Typography>
+          <CodeIcon
+            className="skill-icon"
+            sx={{ width: "50px", height: "50px" }}
+          />
+          <List>
+            <ListItem>JavaScript</ListItem>
+            <ListItem>HTML</ListItem>
+            <ListItem>Css</ListItem>
+            <ListItem>React</ListItem>
+          </List>
         </div>
         <div>
-          <h4>Tools</h4>
-
-          <ul>
-            <li>TypeScript</li>
-            <li>Material UI</li>
-            <li>GitHub</li>
-            <li>Git</li>
-            <li>VsCode</li>
-          </ul>
+          <Typography className="bottom-line" variant="h5">
+            Tools
+          </Typography>
+          <HandymanIcon
+            className="skill-icon"
+            sx={{ width: "50px", height: "50px" }}
+          />
+          <List>
+            <ListItem>TypeScript</ListItem>
+            <ListItem>Material UI</ListItem>
+            <ListItem>GitHub</ListItem>
+            <ListItem>Git</ListItem>
+            <ListItem>VsCode</ListItem>
+          </List>
         </div>
       </div>
     </div>
