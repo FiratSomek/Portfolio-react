@@ -1,9 +1,7 @@
 import "./styles.css";
 import { Link, Typography } from "@mui/material";
 
-// interface IntroduceProps {}
-
-export const Introduce = () => {
+export const Introduce = ({}) => {
   return (
     <div className="introduce-container">
       {/* <div className="int-img">
@@ -14,7 +12,7 @@ export const Introduce = () => {
         <Typography variant="body1">
           I'm a Front End Developer in Türkiye
         </Typography>
-        <Link className="link" href="#" underline="hover">
+        <Link className="link" underline="hover">
           Learn more
         </Link>
       </div>
