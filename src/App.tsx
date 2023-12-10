@@ -6,6 +6,7 @@ import { MyProjects } from "../src/components/MyProjects";
 import { Contact } from "../src/components/Contact";
 import { Footer } from "./components/Footer";
 import { useRef, RefObject } from "react";
+import ScrollButton from "./components/ScrollButton";
 
 interface AppProps {
   onAboutClick: () => void;
@@ -50,6 +51,7 @@ function App() {
       <div>
         <Footer />
       </div>
+      <ScrollButton />
     </div>
   );
 }

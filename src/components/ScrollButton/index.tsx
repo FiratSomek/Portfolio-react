@@ -1,37 +1,39 @@
-import { useState } from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
-import { Button } from "@mui/material";
-import "./styles.css";
+import { useEffect, useState } from 'react';
+import { FaArrowCircleUp } from 'react-icons/fa';
+import { Fab } from '@mui/material';
 
 const ScrollButton = () => {
-  const [visible, setVisible] = useState(false);
+	const [visible, setVisible] = useState(false);
 
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 300) {
-      setVisible(false);
-    }
-  };
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	};
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+	useEffect(() => {
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 300) {
+				setVisible(true);
+			} else {
+				setVisible(false);
+			}
+		});
+	}, []);
 
-  window.addEventListener("scroll", toggleVisible);
-
-  return (
-    <Button className="scroll-button">
-      <FaArrowCircleUp
-        onClick={scrollToTop}
-        style={{ display: visible ? "inline" : "none" }}
-      />
-    </Button>
-  );
+	return (
+		visible ? <Fab
+			onClick={scrollToTop}
+			className={'scroll-button'}
+			size="small"
+			color="primary"
+			sx={{position: 'fixed', bottom: 20,
+			left: 20}}
+		>
+			<FaArrowCircleUp />
+		</Fab> : null
+	);
 };
 
 export default ScrollButton;
