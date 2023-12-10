@@ -1,10 +1,10 @@
 import "./styles.css";
 import { Typography, Card, CardMedia, Link } from "@mui/material";
 import { useState } from "react";
-// import RandomUserImg from "../../assets/random-user.png";
-// import RecipeAppImg from "../../assets/recipe-app.png";
-// import SpendMoneyAppImg from "../../assets/spend-money-app.png";
-// import TicTacToeImg from "../../assets/tic-tac-toe.png";
+import RandomUserImg from "../../assets/random-user.png";
+import RecipeAppImg from "../../assets/recipe-app.png";
+import SpendMoneyAppImg from "../../assets/spend-money-app.png";
+import TicTacToeImg from "../../assets/tic-tac-toe.png";
 
 interface Project {
   name: string;
@@ -15,22 +15,22 @@ const initialProject: Project[] = [
   {
     name: "Recipe React",
     url: "https://recipe-app-phi-sage.vercel.app/",
-    img: "../../assets/recipe-app.png",
+    img: RecipeAppImg,
   },
   {
     name: "Spend Money React",
     url: "https://spend-money-app-orpin.vercel.app/",
-    img: "../../assets/spend-money-app.png",
+    img: SpendMoneyAppImg,
   },
   {
     name: "Random Person React",
     url: "https://random-person-card.vercel.app/",
-    img: "../../assets/random-user.png",
+    img: RandomUserImg,
   },
   {
     name: "Tic Tac Toe React",
     url: "https://tic-tac-toe-react-psi-blush.vercel.app",
-    img: "../../assets/tic-tac-toe.png",
+    img: TicTacToeImg,
   },
 ];
 
