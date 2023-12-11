@@ -8,6 +8,7 @@
   background-color: black;
   color: #fff;
   box-shadow: 0 0 15px 15px lightgrey;
+  padding: 50px;
 }
 .card-body-1 {
   display: flex;
@@ -15,4 +16,5 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 20px 50px;
 }
