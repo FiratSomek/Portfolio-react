@@ -3,19 +3,19 @@
   justify-content: center;
   align-items: center;
   min-height: 500px;
-  width: 100%;
 }
 .int-img img {
   width: 250px;
-  height: 250px;
+  height: 300px;
   border-radius: 50%;
   box-shadow: 0 0 15px 15px lightgrey;
 }
+.int-img {
+  text-align: end;
+  margin: 20px;
+}
 .int-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 30px;
-  font-family: sans-serif;
-  font-size: 15px;
+  text-align: start;
+  margin: 20px;
+  max-width: 500px;
 }
