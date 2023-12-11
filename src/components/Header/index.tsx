@@ -19,14 +19,14 @@ export const Header = ({
     <div className="header-container">
       <div className="header-title">
         <LaptopIcon className="laptop-icon" />
-        <Typography variant="h6">FIRATWEBDEV</Typography>
+        <Typography variant="subtitle2">FIRATWEBDEV</Typography>
       </div>
       <div>
         <nav>
           <Link
             className="link"
             underline="hover"
-            margin="0 20px"
+            margin="0 10px"
             color="inherit"
             onClick={onAboutClick}
           >
@@ -35,7 +35,7 @@ export const Header = ({
           <Link
             className="link"
             underline="hover"
-            margin="0 20px"
+            margin="0 10px"
             color="inherit"
             onClick={onSkillsClick}
           >
@@ -44,7 +44,7 @@ export const Header = ({
           <Link
             className="link"
             underline="hover"
-            margin="0 20px"
+            margin="0 10px"
             color="inherit"
             onClick={onProjectsClick}
           >
@@ -54,9 +54,15 @@ export const Header = ({
       </div>
       <div>
         <Button
+          sx={{
+            width: {
+              xs: 100,
+              sm: 200,
+              size: 100,
+            },
+          }}
           className="contact-btn"
           variant="outlined"
-          size="medium"
           color="inherit"
           onClick={onContactClick}
         >
