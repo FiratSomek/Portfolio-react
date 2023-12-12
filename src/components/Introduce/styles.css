@@ -19,3 +19,15 @@
   margin: 20px;
   max-width: 500px;
 }
+@media screen and (max-width: 650px) {
+  .introduce-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .int-img {
+    text-align: center;
+  }
+  .int-info {
+    text-align: center;
+  }
+}
