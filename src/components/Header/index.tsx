@@ -1,5 +1,6 @@
-import { Link, Button, Typography } from "@mui/material";
+import { Link, Button, Typography, useMediaQuery } from "@mui/material";
 import LaptopIcon from "@mui/icons-material/Laptop";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
 import "./styles.css";
 
 interface HeaderProps {
@@ -15,6 +16,8 @@ export const Header = ({
   onProjectsClick,
   onContactClick,
 }: HeaderProps) => {
+  const isSmallScreen = useMediaQuery("(max-width:500px)");
+
   return (
     <div className="header-container">
       <div className="header-title">
@@ -26,7 +29,7 @@ export const Header = ({
           <Link
             className="link"
             underline="hover"
-            margin="0 10px"
+            margin={isSmallScreen ? "0 5px" : "0 10px"}
             color="inherit"
             onClick={onAboutClick}
           >
@@ -35,7 +38,7 @@ export const Header = ({
           <Link
             className="link"
             underline="hover"
-            margin="0 10px"
+            margin={isSmallScreen ? "0 5px" : "0 10px"}
             color="inherit"
             onClick={onSkillsClick}
           >
@@ -44,7 +47,7 @@ export const Header = ({
           <Link
             className="link"
             underline="hover"
-            margin="0 10px"
+            margin={isSmallScreen ? "0 5px" : "0 10px"}
             color="inherit"
             onClick={onProjectsClick}
           >
@@ -53,21 +56,27 @@ export const Header = ({
         </nav>
       </div>
       <div>
-        <Button
-          sx={{
-            width: {
-              xs: 100,
-              sm: 200,
-              size: 100,
-            },
-          }}
-          className="contact-btn"
-          variant="outlined"
-          color="inherit"
-          onClick={onContactClick}
-        >
-          Contact Me
-        </Button>
+        {isSmallScreen ? (
+          <ContactMailIcon
+            onClick={onContactClick}
+            sx={{
+              width: "50px",
+              height: "50px",
+              padding: "5px",
+
+              cursor: "pointer",
+            }}
+          />
+        ) : (
+          <Button
+            className="contact-btn"
+            variant="outlined"
+            color="inherit"
+            onClick={onContactClick}
+          >
+            Contact Me
+          </Button>
+        )}
       </div>
     </div>
   );
