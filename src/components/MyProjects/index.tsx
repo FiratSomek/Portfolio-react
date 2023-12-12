@@ -81,7 +81,12 @@ export const MyProjects = () => {
               alignItems: "center",
             }}
           >
-            <Link href={project.url} underline="none" target="_blank">
+            <Link
+              href={project.url}
+              underline="none"
+              color="inherit"
+              target="_blank"
+            >
               <CardMedia
                 component="img"
                 alt={project.name}
@@ -100,6 +105,7 @@ export const MyProjects = () => {
                 variant="outlined"
                 href={project.githubUrl}
                 target="_blank"
+                color="inherit"
               >
                 Show Codes
               </Button>
