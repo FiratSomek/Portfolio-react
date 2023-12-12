@@ -23,6 +23,8 @@ export const Skills = () => {
             <ListItem>HTML</ListItem>
             <ListItem>Css</ListItem>
             <ListItem>React</ListItem>
+            <ListItem>TypeScript</ListItem>
+            <ListItem>Material UI</ListItem>
           </List>
         </div>
         <div>
@@ -34,8 +36,6 @@ export const Skills = () => {
             sx={{ width: "50px", height: "50px" }}
           />
           <List>
-            <ListItem>TypeScript</ListItem>
-            <ListItem>Material UI</ListItem>
             <ListItem>GitHub</ListItem>
             <ListItem>Git</ListItem>
             <ListItem>VsCode</ListItem>
