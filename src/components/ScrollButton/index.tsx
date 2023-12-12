@@ -26,8 +26,8 @@ const ScrollButton = () => {
     <Fab
       onClick={scrollToTop}
       className={"scroll-button"}
-      size="small"
-      color="primary"
+      size="medium"
+      color="inherit"
       sx={{ position: "fixed", bottom: 20, left: 20 }}
     >
       <FaArrowCircleUp />
