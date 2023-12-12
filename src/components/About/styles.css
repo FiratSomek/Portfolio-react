@@ -9,15 +9,17 @@
   color: #fff;
   box-shadow: 0 0 15px 15px lightgrey;
 }
-.about-info {
-  display: flex;
-  align-items: center;
-  font-family: sans-serif;
-}
 
 .about-info p {
-  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 50px;
   letter-spacing: 0.75px;
   font-size: 15px;
+}
+@media screen and (min-width: 600px) {
+  .about-info p {
+    width: 500px;
+  }
 }
