@@ -1,10 +1,12 @@
 import "./styles.css";
-import { Typography, Stack, Button } from "@mui/material";
+import { Typography, Stack, Button, useMediaQuery } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 export const Contact = () => {
+  const isSmallScreen = useMediaQuery("(max-width:650px)");
+
   const handleEmailClick = () => {
     window.open("mailto:frtsmk1996@gmail.com");
   };
@@ -24,7 +26,7 @@ export const Contact = () => {
       </div>
       <div>
         <Stack
-          direction="row"
+          direction={isSmallScreen ? "column" : "row"}
           justifyContent="center"
           alignItems="center"
           spacing={6}
