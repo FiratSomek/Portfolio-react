@@ -107,7 +107,7 @@ export const MyProjects = () => {
                 target="_blank"
                 color="inherit"
               >
-                Show Codes
+                Show Code
               </Button>
             </CardActions>
           </Card>
