@@ -63,7 +63,6 @@ export const Header = ({
               width: "50px",
               height: "50px",
               padding: "5px",
-
               cursor: "pointer",
             }}
           />
