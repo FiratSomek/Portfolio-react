@@ -1,5 +1,11 @@
 # My Portfolio with React
 
+# Technologies used
+
+- React
+- TypeScript
+- Material UI
+
 This is a simple react application that I made to introduce myself. I used React, TypeScript and Material UI in it.
 
 ![Ana Sayfa](./src/assets/Ekran%20Alıntısı.PNG)
