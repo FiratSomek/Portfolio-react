@@ -15,6 +15,7 @@ import SpendMoneyAppImg from "../../assets/spend-money-app.png";
 import TicTacToeImg from "../../assets/tic-tac-toe.png";
 import WeatherAppImg from "../../assets/weather-app.png";
 import RandomQuoteImg from "../../assets/random-quote-machine.png";
+import QuizAppImg from "../../assets/quiz-app.png";
 
 interface ProjectReact {
   name: string;
@@ -40,6 +41,12 @@ const initialProject: ProjectReact[] = [
     url: "https://random-person-card.vercel.app/",
     githubUrl: "https://github.com/FiratSomek/random-person-card",
     img: RandomUserImg,
+  },
+  {
+    name: "Quiz App React",
+    url: "https://quiz-app-fs.vercel.app/",
+    githubUrl: "https://github.com/FiratSomek/Quiz-app",
+    img: QuizAppImg,
   },
   {
     name: "Weather App JavaScript",
