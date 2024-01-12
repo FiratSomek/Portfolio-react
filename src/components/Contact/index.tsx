@@ -12,7 +12,7 @@ export const Contact = () => {
   };
 
   const handleLinkedInClick = () => {
-    window.open("https://www.linkedin.com/in/f%C4%B1rat-s%C3%B6mek-6a8094250/");
+    window.open("https://www.linkedin.com/in/firat-s/");
   };
 
   const handleGitHubClick = () => {
