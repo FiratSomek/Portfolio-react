@@ -8,7 +8,7 @@
 
 This is a simple react application that I made to introduce myself. I used React, TypeScript and Material UI in it.
 
-![Ana Sayfa](./src/assets/Ekran%20Alıntısı.PNG)
+![Ana Sayfa](./src/assets/portfolio%20screenshot.PNG)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

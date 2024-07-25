@@ -1,6 +1,6 @@
 import "./styles.css";
 import { Typography } from "@mui/material";
-import ProfileImg from "../../assets/profil.jpg";
+import ProfileImg from "../../assets/pp.jpg";
 
 export const Introduce = () => {
   return (
@@ -18,7 +18,7 @@ export const Introduce = () => {
         </Typography>
         <Typography variant="body1">
           The languages and tools I use are as follows: HTML, CSS, JavaScript,
-          React, Material UI, TypeScript
+          React, Material UI, TypeScript, Git, GitHub
         </Typography>
       </div>
     </div>
