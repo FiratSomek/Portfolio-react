@@ -16,6 +16,7 @@ import TicTacToeImg from "../../assets/tic-tac-toe.png";
 import WeatherAppImg from "../../assets/weather-app.png";
 import RandomQuoteImg from "../../assets/random-quote-machine.png";
 import QuizAppImg from "../../assets/quiz-app.png";
+import WordGameImg from "../../assets/word-game.png";
 
 interface ProjectReact {
   name: string;
@@ -24,6 +25,18 @@ interface ProjectReact {
   img: string;
 }
 const initialProject: ProjectReact[] = [
+  {
+    name: "Word Game React",
+    url: "https://word-game-three-wine.vercel.app/",
+    githubUrl: "https://github.com/FiratSomek/Word-game",
+    img: WordGameImg,
+  },
+  {
+    name: "Quiz App React",
+    url: "https://quiz-app-fs.vercel.app/",
+    githubUrl: "https://github.com/FiratSomek/Quiz-app",
+    img: QuizAppImg,
+  },
   {
     name: "Recipe React",
     url: "https://recipe-app-phi-sage.vercel.app/",
@@ -42,12 +55,7 @@ const initialProject: ProjectReact[] = [
     githubUrl: "https://github.com/FiratSomek/random-person-card",
     img: RandomUserImg,
   },
-  {
-    name: "Quiz App React",
-    url: "https://quiz-app-fs.vercel.app/",
-    githubUrl: "https://github.com/FiratSomek/Quiz-app",
-    img: QuizAppImg,
-  },
+
   {
     name: "Weather App JavaScript",
     url: "https://codepen.io/Firatsomek/pen/abQRRpb",
